@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <link rel="stylesheet" href="../css/microcinta.css">
+    
+    <div class="titulo2">
+      <h1>Calculadora de impedancias para microcinta</h1>
+  </div>
+</header>
+
+<body class="Inicio">
+  
+<div class="Contenedor">
+
+  <div class="imagen_cinta">
+    
+    <img class="mcinta" src="../img/microcinta.png" alt="Img_cinta" id="mcinta">
+</div>
+
+
+
+  <h4>Elija el material dielectrico. </h4>
+
+    <div class="dielectrico">
+    <div class="Seleccion">
+      <select class="diele" id="diele" name="Dielectrico" onchange="cambiar_estilo()">
+        <optgroup>
+          <option disabled selected >Elige una opcion</option>
+          <option  value="1" selected="selected">FR4</option>
+          <option  value="2">Fibra de Vidrio (D Glass) </option>
+          <option  value="3">Fibra de Vidrio (E glass)</option>
+          <option  value="4">PVC</option>
+          <option  value="5">Duroid</option>
+          <option  value="6">Mylar</option>
+          <option  value="7">Poliestireno</option>
+          <option  value="8">Polietileno</option>
+          <option  value="9">Porcelana</option>
+          <option  value="10">Teflon</option>
+          <option  value="11">Cuarzo</option>
+          <option  value="12">Otro</option>
+        </optgroup>
+      </select>
+    </div>
+      <div class="otra_seleccion">
+        <input class="input_dielectrico" type="text" placeholder="Ingrese permitividad relativa" id="dielectrico_in"  >
+      </div>
+
+
+    </div>
+
+
+
+    <h4>Especifique la altura (h) del dielectrico. </h4>
+
+
+    <div class="Espesor">
+    <div class="opciones_calculo">
+    
+      <input class="input_espesor" type="text" placeholder="Ingrese altura del dielectrico" id="espesor_input" required >
+      
+    </div>
+    <div class="medida_espesor">
+      <select class="espesor_medicion" id="esp" name="medicion" onchange="medida()">
+        <optgroup>
+          <option disabled selected >Tipo de medida</option>
+          <option value="1" selected="selected">mm</option>
+          <option value="2">cm</option>
+        </optgroup>
+      </select>
+    </div>
+
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+<div class="general_dimensiones" id="g_dimension">
+
+  <h4>Introduce el ancho de la microcinta. </h4>
+
+<div class="longitudes">
+  <div class="Ancho">
+    
+    <input class="input_ancho" type="text" placeholder="Ingrese el ancho de la microcinta." id="ancho_input"  required>
+    
+  </div>
+  
+
+ 
+
+</div>
+
+<div class="tipo_medida">
+  <select class="atributos_medicion" id="med" name="medicion_dimnensiones" disabled="disabled">
+    <optgroup>
+      <option disabled selected >Tipo de medida</option>
+      <option value="1" selected="selected">mm</option>
+      <option value="2">cm</option>
+    </optgroup>
+  </select>
+</div>
+
+
+<div class="resultado_div">
+  <h2 id="resultado">El valor de la impedancia caracteristica es:</h2>
+
+<input class="input_resultadomicro" type="text" readonly="readonly" id="micro_res" >
+
+</div>
+
+
+
+
+<div class="botones"> 
+
+  <div class="calculo_impedancia">
+    <Button id="impedancia_calculo"  >Calcular la impedancia</Button>
+  </div>
+  <div class="retroceso">
+    <Button id="retroceso" onclick="menu()" >Regresar al menu</Button>
+  </div>
+
+
+
+</div>
+
+
+
+</div>    
+ 
+
+<script src="../js/cambio.js"></script>
+<script src="../js/Dielectrico.js"></script>
+<script src="../js/microcinta_impedancia.js"></script>
+  </body>
+
+  
+
+</html>

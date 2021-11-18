@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <link rel="stylesheet" href="../css/Bifiliar.css">
+    
+  
+    <div class="titulo2">
+      <h1>Calculadora de impedancias para linea bifilar o de alambres paralelos</h1>
+  </div>
+</header>
+
+<body class="Inicio">
+  
+<div class="Contenedor">
+
+  <div class="imagen_bifiliar">
+    
+    <img class="bifiliarl" src="../img/bifiliar.svg" alt="Img_bifiliar" id="bif">
+</div>
+
+
+
+  <h4>Elija el material dielectrico. </h4>
+
+    <div class="dielectrico3">
+    <div class="Seleccion3">
+      <select class="diele3" id="diele" name="Dielectrico" onchange="cambiar_estilo()">
+        <optgroup>
+          <option disabled selected >Elige una opcion</option>
+          <option  value="1" selected="selected">FR4</option>
+          <option  value="2">Fibra de Vidrio (D Glass) </option>
+          <option  value="3">Fibra de Vidrio (E glass)</option>
+          <option  value="4">PVC</option>
+          <option  value="5">Duroid</option>
+          <option  value="6">Mylar</option>
+          <option  value="7">Poliestireno</option>
+          <option  value="8">Polietileno</option>
+          <option  value="9">Porcelana</option>
+          <option  value="10">Teflon</option>
+          <option  value="11">Caucho</option>
+          <option  value="12">Otro</option>
+        </optgroup>
+      </select>
+    </div>
+      <div class="otra_seleccion3">
+        <input class="input_dielectrico3" type="text" placeholder="Ingrese permitividad relativa" id="dielectrico_in"  >
+      </div>
+
+
+    </div>
+
+    <h4>Especifique el diametro del conductor. </h4>
+<div class="diametro_conductor">
+
+    <div class="diam">
+      <input class="input_diamconductor" type="text" placeholder="Ingrese diametro del conductor" id="conductor_input" required >
+    </div>
+
+
+    <div class="medida_diametro">
+      <select class="diametro_medicion" id="diam" name="diametro_c" onchange="medida()">
+        <optgroup>
+          <option disabled selected >Elige el tipo de medicion</option>
+          <option value="1" selected="selected">mm</option>
+          <option value="2">cm</option>
+         
+        </optgroup>
+      </select>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+
+<div class="general_diametrocentro">
+
+  <h4>Introduce la distancia centro a centro entre conductores </h4>
+
+<div class="diametros3">
+  <div class="diametro_exterior3">
+    
+    <input class="input_dcc" type="text" placeholder="Ingrese la distancia centro a centro" id="dcc_input"  required>
+    
+  </div>
+  <div class="medida_dcc">
+    <select class="dcc_medicion" id="dcc" name="medicion_dcc" onchange="medida()" disabled="disabled">
+      <optgroup>
+        <option disabled selected >Tipo de medida</option>
+        <option value="1"  selected="selected">mm</option>
+        <option value="2">cm</option>
+      </optgroup>
+    </select>
+  </div>  
+
+</div>
+
+
+<div class="resultado_div">
+  <h2 id="resultado">El valor de la impedancia caracteristica es:</h2>
+
+<input class="input_resultadobif" type="text" readonly="readonly" id="bifiliar_res" >
+
+</div>
+
+
+
+<div class="botones"> 
+
+  <div class="calculo_impedancia3">
+    <Button id="impedancia_calculo3" >Calcular la impedancia</Button>
+  
+  </div>
+  <div class="retroceso">
+    <Button id="retroceso" onclick="menu()">Regresar al menu</Button>
+  </div>
+
+
+
+</div>
+
+
+</div>    
+<script src="../js/cambio.js"></script>
+<script src="../js/Dielectrico.js"></script>
+<script src="../js/bifiliar_impedancia.js"></script> 
+  </body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <link rel="stylesheet" href="../css/diseño.css">
+    
+    <div class="titulo">
+        <h1>Calculadora de líneas de transmisión</h1>
+    </div>
+</header>
+
+<body class="Inicio">
+  
+<div class="Contenedor">
+  <h4>Elige el tipo de linea que desea calcular. </h4>
+
+    <div class="opciones_linea">
+    
+      <select class="linea" id="tipo_linea" name="Linea">
+        <optgroup>
+          <option disabled selected >Elige una opcion</option>
+          <option value="1">Microcinta</option>
+          <option value="2">Cable coaxial</option>
+          <option value="3">Línea bifilar o de alambres paralelos</option>
+        </optgroup>
+      </select>
+
+    </div>
+
+    <h4>Elige el tipo de calculo a realizar. </h4>
+    <div class="opciones_calculo">
+    
+      <select class="calculo" id="tipo_calculo" name="calculo">
+        <optgroup>
+          <option disabled selected >Elige una opcion </option>
+          <option value="1">Calculo de dimensiones fisicas</option>
+          <option value="2">Calculo de impedancias</option>
+        </optgroup>
+      </select>
+      
+    </div>
+
+    <div class="pagina_calculo">
+      <Button id="reedireccionar" >Ir a la calculadora</Button>
+    </div>
+  </div>
+    
+
+  <script src="../js/cambio.js"></script>
+
+
+  </body>
+
+</html>

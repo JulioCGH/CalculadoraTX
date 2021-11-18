@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <link rel="stylesheet" href="../css/coaxial.css">
+    
+    
+    <div class="titulo2">
+      <h1>Calculadora de impedancias para cable coaxial</h1>
+  </div>
+</header>
+
+<body class="Inicio">
+  
+<div class="Contenedor">
+
+  <div class="imagen_coaxial">
+    
+    <img class="cabcoax" src="../img/coaxial.jfif" alt="Img_coaxial" id="ccoax">
+</div>
+
+
+
+  <h4>Elija el material dielectrico. </h4>
+
+    <div class="dielectrico2">
+    <div class="Seleccion2">
+      <select class="diele2" id="diele" name="Dielectrico" onchange="cambiar_estilo() ">
+        <optgroup>
+          <option disabled selected >Elige una opcion</option>
+          <option  value="1" selected="selected">FR4</option>
+          <option  value="2">Fibra de Vidrio (D Glass) </option>
+          <option  value="3">Fibra de Vidrio (E glass)</option>
+          <option  value="4">PVC</option>
+          <option  value="5">Duroid</option>
+          <option  value="6">Mylar</option>
+          <option  value="7">Poliestireno</option>
+          <option  value="8">Polietileno</option>
+          <option  value="9">Porcelana</option>
+          <option  value="10">Teflon</option>
+          <option  value="11">Caucho</option>
+          <option  value="12">Otro</option>
+        </optgroup>
+      </select>
+    </div>
+      <div class="otra_seleccion2">
+        <input class="input_dielectrico2" type="text" placeholder="Ingrese permitividad relativa" id="dielectrico_in"  >
+      </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+<div class="general_diametros">
+
+  <h4>Introduce los diametros del cable coaxial. </h4>
+
+<div class="diametros">
+  <div class="diametro_exterior">
+    
+    <input class="input_de" type="text" placeholder="Ingrese el diametro exterior" id="de_input"  required>
+    
+  </div>
+  <div class="Diametro_interior">
+    
+    <input class="input_di" type="text" placeholder="Ingrese el diametro interior." id="di_input" required >
+    
+
+  </div>
+
+ 
+
+</div>
+
+<div class="tipo_medida2">
+  <select class="atributos_medicion2" id="med2" name="medicion_dimnensiones2">
+    <optgroup>
+      <option disabled selected >Tipo de medida</option>
+      <option value="1" selected="selected">mm</option>
+      <option value="2">cm</option>
+    </optgroup>
+  </select>
+</div>
+
+
+
+
+<div class="resultado_div">
+  <h2 id="resultado">El valor de la impedancia caracteristica es:</h2>
+
+<input class="input_resultadocoax" type="text" readonly="readonly" id="coax_res" >
+
+</div>
+
+
+
+<div class="botones"> 
+
+  <div class="calculo_impedancia2">
+    <Button id="impedancia_calculo2" >Calcular la impedancia</Button>
+  </div>
+  <div class="retroceso">
+    <Button id="retroceso" onclick="menu()" >Regresar al menu</Button>
+  </div>
+
+
+
+</div>
+
+
+</div>    
+<script src="../js/cambio.js"></script>
+<script src="../js/Dielectrico.js"></script>
+<script src="../js/coaxial_impedancia.js"></script>
+  </body>
+
+</html>

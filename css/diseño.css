@@ -1,0 +1,85 @@
+.titulo{
+    
+    margin:auto;
+    background-color:lightsteelblue;
+    opacity: 80%;
+    text-align: center;
+    border: 1px solid;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 60%;
+    height:auto;
+}
+
+
+button{
+
+border: none;
+background-color:lightgreen;
+padding: 15px 20px;
+font-weight:bold; 
+}
+
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+
+select{
+    border-radius: 5px 5px 0 0;
+    padding: 8px 15px;
+    width:35%;
+    overflow: hidden;
+    background-color: #fff;   
+}
+
+optgroup{
+cursor:pointer;   
+width: 30%;
+    position:relative;
+    font-size: 15px;
+    color:black;
+    border:1px solid #ccc;
+}
+
+.select select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+}
+
+
+h1{
+    color:darkviolet;
+    font-weight: bolder;
+ }
+ 
+
+h4{
+    color:orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.Contenedor{
+margin:auto;
+text-align: center;
+border: 1px solid;
+height:auto;
+width: 60%;
+
+}
+
+
+.pagina_calculo{
+ margin-top: 4%;  
+ 
+ margin-bottom: 4%;
+}
+
+
