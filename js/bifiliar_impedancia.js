@@ -20,6 +20,11 @@ var permitividad2=document.getElementById("diele").value;
 
 
 
+if(diametro_conductor>=diametro_cc){
+    alert("El diametro del conductor debe ser mayor a la distancia centro a centro");
+    return false;
+}
+
 
 if(diametro_conductor.length == 0 || /^\s+$/.test(diametro_conductor) ||diametro_cc.length == 0 || /^\s+$/.test(diametro_cc) ){
     alert("No puede haber campos vacios");
@@ -61,11 +66,6 @@ if(!decimales.test(permitividad1)){
 }
 
 
-
-if(diametro_conductor>=diametro_cc){
-    alert("El diametro del conductor debe ser mayor a la distancia centro a centro");
-    return false;
-}
 
 
 
