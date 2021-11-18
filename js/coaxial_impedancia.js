@@ -38,6 +38,10 @@ if(!decimales.test(diametro_interior)||!decimales.test(diametro_exterior)){
     return false;
 }
 
+if(diametro_exterior<=diametro_interior){
+    alert("El diametro exterior debe ser mayor a el diametro interior");
+    return false;
+}
 
 
 if(permitividad2==12 ){
