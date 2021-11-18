@@ -20,10 +20,7 @@ var permitividad2=document.getElementById("diele").value;
 
 
 
-if(diametro_conductor>=diametro_cc){
-    alert("El diametro del conductor debe ser mayor a la distancia centro a centro");
-    return false;
-}
+
 
 
 if(diametro_conductor.length == 0 || /^\s+$/.test(diametro_conductor) ||diametro_cc.length == 0 || /^\s+$/.test(diametro_cc) ){
@@ -37,12 +34,13 @@ if(diametro_conductor==0||diametro_cc==0){
 }
 
 
-
-
-
-
 if(!decimales.test(diametro_cc)||!decimales.test(diametro_conductor)){
     alert("solo se aceptan numeros positivos con hasta 10 decimales ");
+    return false;
+}
+
+if(diametro_conductor>=diametro_cc){
+    alert("El diametro del conductor debe ser menor a la distancia centro a centro");
     return false;
 }
 
