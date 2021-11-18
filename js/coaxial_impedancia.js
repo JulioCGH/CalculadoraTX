@@ -30,11 +30,7 @@ if(diametro_interior==0||diametro_exterior==0){
     return false;
 }
 
-if(diametro_exterior<=diametro_interior){
-    alert("El diametro exterior debe ser mayor al interior");
-    return false;
-    
-}
+
 
 
 if(!decimales.test(diametro_interior)||!decimales.test(diametro_exterior)){

@@ -31,11 +31,8 @@ if(diametro_conductor==0||diametro_cc==0){
     return false;
 }
 
-if(diametro_conductor>=diametro_cc){
-    alert("El diametro del conductor debe ser menor a la distancia centro a centro");
-    return false;
-    
-}
+
+
 
 
 
