@@ -11,8 +11,8 @@ document.getElementById("resultado").style.display="none";
     
   
 var dielectrico= valor_dielectricos();   
-var diametro_conductor=document.getElementById("conductor_input").value;
-var diametro_cc=document.getElementById("dcc_input").value;
+var diametro_conductor=Number(document.getElementById("conductor_input").value);
+var diametro_cc=Number(document.getElementById("dcc_input").value);
 
 var decimales= /^(\d+)?([.]?\d{1,10})?$/;  
 var permitividad1=document.getElementById("dielectrico_in").value;
